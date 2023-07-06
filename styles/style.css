@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.profile-picture{
+    width: 130px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header h1{
+    color: #4E5150;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.faded{
+    font-size: 0.75rem;
+    color: #A9A9A9;
+    font-weight: 600;
+}
+.bold{
+    font-size: 0.97rem;
+    font-weight: 600;
+    color: #4E5150;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.info div{
+    background-color: #E5E5E5;
+    border-radius: 12px;
+    width: 5.4rem;
+    height: 3.63rem;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.gallery{
+    display: grid;
+	grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 70%;
+    grid-gap: 15px;
+    margin-top: 60px;
+    margin-left: 20%;
+
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px 0px #00000026;
+}
+
+.gallery img:hover{
+    opacity: 0.8;
+}
+
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.img2{
+    grid-column-start: 5;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.img3{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.img4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.img5{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.img6{
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery{
+        width: 95%;
+        grid-gap: 5px;
+        margin-left: 7%;
+    }
+}
+
+footer{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+}
+footer a{
+    color: black;
+}

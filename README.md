@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](./img/desktopdemo.png)![screenshot](./img/mobiledemo.png)
+![screenshot](./img/desktopdemo.png)
 
 
 
